@@ -1,1 +1,26 @@
-# EXPRESS-fumetti-app
+# 📚 Fumetti & Fumetterie Backend
+
+Un'applicazione backend sviluppata con **Express.js** e **Prisma ORM** per la gestione di fumetti e fumetterie, con supporto per autenticazione utente, validazione delle richieste e operazioni CRUD.
+
+---
+
+## 🚀 Funzionalità
+
+- ✅ Registrazione e login utente con **JWT authentication**
+- 📖 Gestione **fumetti**: aggiunta, modifica, visualizzazione e cancellazione
+- 🏬 Gestione **fumetterie** (in sviluppo)
+- 🛡 Middleware di **autenticazione**
+- 🧪 Validazione dei dati in entrata con **Zod**
+- 🗃 Database relazionale con **Prisma ORM** e **SQLite/PostgreSQL/MySQL**
+- 🌐 Routing RESTful tramite **Express Router**
+
+---
+
+## 🛠 Stack Tecnologico
+
+- **Node.js** + **Express.js**
+- **Prisma ORM**
+- **JWT** per autenticazione
+- **Zod** per validazione schema
+- **dotenv** per gestione variabili di ambiente
+- **ESM** (ECMAScript Modules)
