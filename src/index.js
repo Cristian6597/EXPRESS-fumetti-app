@@ -7,6 +7,7 @@ import "./utils/authgoogle.js";
 import session from "express-session";
 import passport from "passport";
 import dotenv from "dotenv";
+import chatbotRouter from "./routes/chatbot.route.js";
 dotenv.config();
 
 function isLoggedIn(req, res, next) {
@@ -30,6 +31,7 @@ app.use(passport.session());
 app.use(fumettiRouter);
 app.use(fumetterieRouter);
 app.use(authRouter);
+app.use("/api", chatbotRouter);
 app.use("/api/auth", authRouter);
 
 app.get("/", (req, res) => {
