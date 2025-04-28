@@ -13,7 +13,8 @@ Un'applicazione backend sviluppata con **Express.js** e **Prisma ORM** per la ge
 - 🧪 Validazione dei dati in entrata con **Zod**
 - 🗃 Database relazionale con **Prisma ORM** e **SQLite/PostgreSQL/MySQL**
 - 🌐 Routing RESTful tramite **Express Router**
-- 🔒 Autenticazione con Google tramite passport
+- 🔒 Autenticazione con Google tramite passport **passport-google-oauth2**
+- 📩 Verifica account tramite Email **nodemailer** 
 
 ---
 
