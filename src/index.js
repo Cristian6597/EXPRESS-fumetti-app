@@ -3,7 +3,7 @@ import express from "express";
 import fumettiRouter from "./routes/fumetti.route.js";
 import fumetterieRouter from "./routes/fumetterie.route.js";
 import authRouter from "./routes/auth.route.js";
-import "./authgoogle.js";
+import "./utils/authgoogle.js";
 import session from "express-session";
 import passport from "passport";
 import dotenv from "dotenv";
@@ -30,6 +30,7 @@ app.use(passport.session());
 app.use(fumettiRouter);
 app.use(fumetterieRouter);
 app.use(authRouter);
+app.use("/api/auth", authRouter);
 
 app.get("/", (req, res) => {
   res.send('<a href="/auth/google">Autenticati con Google</a>');

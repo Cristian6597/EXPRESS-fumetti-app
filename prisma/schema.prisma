@@ -19,6 +19,7 @@ model User {
   password     String
   firstName    String
   lastName     String
+  isVerified   Boolean  @default(false)
   createdAt    DateTime @default(now())
   profileImage String?
 }
