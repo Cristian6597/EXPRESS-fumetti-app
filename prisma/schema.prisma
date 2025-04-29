@@ -40,6 +40,9 @@ model Fumetti {
   volume       String
   author       String
   date         String
+  image        String?
+  price        Float?
+  favourite    Boolean    @default(false)
   createdAt    DateTime   @default(now())
   Fumetteria   Fumetteria @relation(fields: [fumetteriaId], references: [id], onDelete: Cascade)
   fumetteriaId Int

@@ -23,7 +23,7 @@ chatbotRouter.post("/chat", async (req, res) => {
         messages: [
           {
             role: "system",
-            //content da inserire per il chatbot
+            //Dare informazioni per settare il chatbot
             content:
               "Sei un assistente nerd appassionato di fumetti, manga, videogiochi.",
           },

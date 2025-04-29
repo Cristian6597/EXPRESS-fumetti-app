@@ -7,6 +7,7 @@ import "./utils/authgoogle.js";
 import session from "express-session";
 import passport from "passport";
 import dotenv from "dotenv";
+import cors from "cors";
 import chatbotRouter from "./routes/chatbot.route.js";
 dotenv.config();
 
@@ -17,6 +18,12 @@ function isLoggedIn(req, res, next) {
 const PORT = process.env.PORT || 3009;
 
 const app = express();
+app.use(
+  cors({
+    origin: "http://localhost:5173",
+    methods: "*",
+  })
+);
 app.use(express.json());
 app.use(
   session({
